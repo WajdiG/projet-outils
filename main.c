@@ -40,14 +40,12 @@ int main(){
 	int cpt=0;
 	int choix;
 	short carte=0;
-	short score_joueur;
-	short score_banque;
+	short score_joueur=0;
+	short score_banque=0;
 	
 	for(cpt=0 ; cpt<52 ; cpt++){
 		cartes[cpt]=0;
 	}
-	
-
 		for(cpt=0 ; cpt<2 ; cpt++){
 			carte=tirer_carte(JOUEUR);
 			donner_valeur_carte(JOUEUR, carte);
@@ -94,15 +92,25 @@ int main(){
 		afficher_mains(BANQUE);
 		printf("score banque : %d \n", score_banque);
 	}
-	if(score_joueur>=21){
-		printf("le joueur 1 a gagné !\n");
+
+	if(score_banque<score_joueur&&score_banque<21&&score_joueur<21){
+		printf("\nle joueur 1 a gagné !\n");
+		afficher_mains(JOUEUR);
+	}
+	else if(score_banque>score_joueur&&score_banque<21&&score_joueur<21){
+		printf("\nl'ordinateur a gagné !\n");
 		afficher_mains(BANQUE);
 	}
-	else if(score_banque>=21){
-		printf("l'ordinateur a gagné !\n");
+	else if(score_banque>21&&score_joueur<=21){
+		printf("\nle joueur 1 a gagné !\n");
+		afficher_mains(JOUEUR);
+	}
+	else if(score_joueur>21&&score_banque<=21){
+		printf("\nl'ordinateur a gagné !\n");
 		afficher_mains(BANQUE);
 	}
+		
 	
-	
+
 	return EXIT_SUCCESS;
 }
