@@ -1,0 +1,232 @@
+\hypertarget{fonction_8c}{\section{Référence du fichier fonction.\-c}
+\label{fonction_8c}\index{fonction.\-c@{fonction.\-c}}
+}
+
+
+projet de Black Jack  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fonction_8c_a508cc209fbc99ea975d1c1ecb5f1c6fe}{L\-I\-B\-R\-E}~0
+\item 
+\#define \hyperlink{fonction_8c_aa6a8403ad0170c8f0a3ccbb6f982f36d}{B\-A\-N\-Q\-U\-E}~1
+\item 
+\#define \hyperlink{fonction_8c_a7f907d351a198b9a0405ce45155625dc}{J\-O\-U\-E\-U\-R}~2
+\item 
+\#define \hyperlink{fonction_8c_a06f74699ca6f213b3297382d27152578}{B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}~3
+\item 
+\#define \hyperlink{fonction_8c_ab3167868edabf23ce42007cfa46f0a34}{D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}~0
+\item 
+\#define \hyperlink{fonction_8c_a907dc60a26479ff6bf53792573e4bafa}{F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}~12
+\item 
+\#define \hyperlink{fonction_8c_adaac26fcb2ef9b0c98dbcd70395f81d4}{D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~13
+\item 
+\#define \hyperlink{fonction_8c_a5e5f41c3b532ee5dbea0aa4abcad0c5c}{F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}~25
+\item 
+\#define \hyperlink{fonction_8c_af174177234917e71a4ddc296b65bf836}{D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}~26
+\item 
+\#define \hyperlink{fonction_8c_a59b61abc1fe046e0165a739067b1854b}{F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}~38
+\item 
+\#define \hyperlink{fonction_8c_a776e9059fbac10978154260ee7ebfe08}{D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}~39
+\item 
+\#define \hyperlink{fonction_8c_aef89a2a14b5ec6b3999fed241935ca9d}{F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}~51
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{fonction_8c_a6abf9e7f9fc14ad236cf90717f19a335}{tirer\-\_\-carte} (short joueur)
+\begin{DoxyCompactList}\small\item\em permet de tirer une carte parmis 52 \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{afficher\-\_\-carte} (short num)
+\begin{DoxyCompactList}\small\item\em permet d'afficher la carte \-: son chiffre et sa couleur \end{DoxyCompactList}\item 
+void \hyperlink{fonction_8c_ae877ba4631126fa76bf3fe736ad4988c}{afficher\-\_\-mains} (short joueur)
+\begin{DoxyCompactList}\small\item\em fonction permettant d'afficher la main du joueur entrée en paramètre \end{DoxyCompactList}\item 
+\hypertarget{fonction_8c_abc2d6eef3df10ba4785398dc43a03d60}{void \hyperlink{fonction_8c_abc2d6eef3df10ba4785398dc43a03d60}{afficher\-\_\-mains\-\_\-cachee} ()}\label{fonction_8c_abc2d6eef3df10ba4785398dc43a03d60}
+
+\begin{DoxyCompactList}\small\item\em fonction permettant d'affiché la main de la banque, carte cachée incluse \end{DoxyCompactList}\item 
+short \hyperlink{fonction_8c_ad26bfbf4807c11b9409a0b8f0df030af}{donner\-\_\-valeur\-\_\-carte} (short joueur, short carte)
+\begin{DoxyCompactList}\small\item\em donne la valeur de la carte de 0 à 12 \end{DoxyCompactList}\item 
+short \hyperlink{fonction_8c_af1b24ae11904b70fc5951f618ed4db94}{evaluer\-\_\-score} (short joueur, short carte\-\_\-recue, short $\ast$score)
+\begin{DoxyCompactList}\small\item\em fonction permettant de mettre à jour le score du joueur placer en paramètre en fonction de la carte reçue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+short \hyperlink{fonction_8c_a4afa838396554698e0668c1a09161ebc}{cartes} \mbox{[}52\mbox{]}
+\item 
+short \hyperlink{fonction_8c_a0f90764a2168917eb0c360c066a47b02}{nb\-\_\-as\-\_\-joueur}
+\item 
+short \hyperlink{fonction_8c_a9e7bc0727efe41c6056e4308041f7b88}{nb\-\_\-as\-\_\-banque}
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+projet de Black Jack \begin{DoxyAuthor}{Auteur}
+G\-U\-E\-D\-O\-U\-A\-R Wajdi 
+
+T\-H\-I\-E\-U\-L\-A\-R\-T Godefroy 
+
+O\-K\-R\-O\-U P\-O\-D\-A 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22 Octobre 2014 
+\end{DoxyDate}
+
+
+\subsection{Documentation des macros}
+\hypertarget{fonction_8c_aa6a8403ad0170c8f0a3ccbb6f982f36d}{\index{fonction.\-c@{fonction.\-c}!B\-A\-N\-Q\-U\-E@{B\-A\-N\-Q\-U\-E}}
+\index{B\-A\-N\-Q\-U\-E@{B\-A\-N\-Q\-U\-E}!fonction.c@{fonction.\-c}}
+\subsubsection[{B\-A\-N\-Q\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-A\-N\-Q\-U\-E~1}}\label{fonction_8c_aa6a8403ad0170c8f0a3ccbb6f982f36d}
+constante indiquant que la carte est dans la main de la banque \hypertarget{fonction_8c_a06f74699ca6f213b3297382d27152578}{\index{fonction.\-c@{fonction.\-c}!B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E@{B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}}
+\index{B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E@{B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}!fonction.c@{fonction.\-c}}
+\subsubsection[{B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-A\-N\-Q\-U\-E\-\_\-\-C\-A\-C\-H\-E\-E~3}}\label{fonction_8c_a06f74699ca6f213b3297382d27152578}
+constante indiquant que la carte est dans la main de la banque mais cachée \hypertarget{fonction_8c_adaac26fcb2ef9b0c98dbcd70395f81d4}{\index{fonction.\-c@{fonction.\-c}!D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}}
+\index{D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}!fonction.c@{fonction.\-c}}
+\subsubsection[{D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X~13}}\label{fonction_8c_adaac26fcb2ef9b0c98dbcd70395f81d4}
+constante indiquant le début des cartes de type carreaux \hypertarget{fonction_8c_ab3167868edabf23ce42007cfa46f0a34}{\index{fonction.\-c@{fonction.\-c}!D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S@{D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}}
+\index{D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S@{D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}!fonction.c@{fonction.\-c}}
+\subsubsection[{D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-\_\-\-C\-O\-E\-U\-R\-S~0}}\label{fonction_8c_ab3167868edabf23ce42007cfa46f0a34}
+constante indiquant le début des cartes de type coeurs \hypertarget{fonction_8c_af174177234917e71a4ddc296b65bf836}{\index{fonction.\-c@{fonction.\-c}!D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S@{D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}}
+\index{D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S@{D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}!fonction.c@{fonction.\-c}}
+\subsubsection[{D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-\_\-\-P\-I\-Q\-U\-E\-S~26}}\label{fonction_8c_af174177234917e71a4ddc296b65bf836}
+constante indiquant le début des cartes de type piques \hypertarget{fonction_8c_a776e9059fbac10978154260ee7ebfe08}{\index{fonction.\-c@{fonction.\-c}!D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S@{D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}}
+\index{D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S@{D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}!fonction.c@{fonction.\-c}}
+\subsubsection[{D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-B\-\_\-\-T\-R\-E\-F\-L\-E\-S~39}}\label{fonction_8c_a776e9059fbac10978154260ee7ebfe08}
+constante indiquant le début des cartes de type trefles \hypertarget{fonction_8c_a5e5f41c3b532ee5dbea0aa4abcad0c5c}{\index{fonction.\-c@{fonction.\-c}!F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}}
+\index{F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X@{F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}!fonction.c@{fonction.\-c}}
+\subsubsection[{F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-N\-\_\-\-C\-A\-R\-R\-E\-A\-U\-X~25}}\label{fonction_8c_a5e5f41c3b532ee5dbea0aa4abcad0c5c}
+constante indiquant le fin des cartes de type carreaux \hypertarget{fonction_8c_a907dc60a26479ff6bf53792573e4bafa}{\index{fonction.\-c@{fonction.\-c}!F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S@{F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}}
+\index{F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S@{F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}!fonction.c@{fonction.\-c}}
+\subsubsection[{F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-N\-\_\-\-C\-O\-E\-U\-R\-S~12}}\label{fonction_8c_a907dc60a26479ff6bf53792573e4bafa}
+constante indiquant la fin des cartes de type coeurs \hypertarget{fonction_8c_a59b61abc1fe046e0165a739067b1854b}{\index{fonction.\-c@{fonction.\-c}!F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S@{F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}}
+\index{F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S@{F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}!fonction.c@{fonction.\-c}}
+\subsubsection[{F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-N\-\_\-\-P\-I\-Q\-U\-E\-S~38}}\label{fonction_8c_a59b61abc1fe046e0165a739067b1854b}
+constante indiquant le fin des cartes de type piques \hypertarget{fonction_8c_aef89a2a14b5ec6b3999fed241935ca9d}{\index{fonction.\-c@{fonction.\-c}!F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S@{F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}}
+\index{F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S@{F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}!fonction.c@{fonction.\-c}}
+\subsubsection[{F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-I\-N\-\_\-\-T\-R\-E\-F\-L\-E\-S~51}}\label{fonction_8c_aef89a2a14b5ec6b3999fed241935ca9d}
+constante indiquant le fin des cartes de type trefles \hypertarget{fonction_8c_a7f907d351a198b9a0405ce45155625dc}{\index{fonction.\-c@{fonction.\-c}!J\-O\-U\-E\-U\-R@{J\-O\-U\-E\-U\-R}}
+\index{J\-O\-U\-E\-U\-R@{J\-O\-U\-E\-U\-R}!fonction.c@{fonction.\-c}}
+\subsubsection[{J\-O\-U\-E\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\-O\-U\-E\-U\-R~2}}\label{fonction_8c_a7f907d351a198b9a0405ce45155625dc}
+constante indiquant que la carte est dans la main du joueur \hypertarget{fonction_8c_a508cc209fbc99ea975d1c1ecb5f1c6fe}{\index{fonction.\-c@{fonction.\-c}!L\-I\-B\-R\-E@{L\-I\-B\-R\-E}}
+\index{L\-I\-B\-R\-E@{L\-I\-B\-R\-E}!fonction.c@{fonction.\-c}}
+\subsubsection[{L\-I\-B\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-I\-B\-R\-E~0}}\label{fonction_8c_a508cc209fbc99ea975d1c1ecb5f1c6fe}
+constante indiquant que la carte est libre 
+
+\subsection{Documentation des fonctions}
+\hypertarget{fonction_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}{\index{fonction.\-c@{fonction.\-c}!afficher\-\_\-carte@{afficher\-\_\-carte}}
+\index{afficher\-\_\-carte@{afficher\-\_\-carte}!fonction.c@{fonction.\-c}}
+\subsubsection[{afficher\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-\_\-carte (
+\begin{DoxyParamCaption}
+\item[{short}]{num}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_aa59cf3010d2ca3d7dd3f9628e6a7bc72}
+
+
+permet d'afficher la carte \-: son chiffre et sa couleur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em num} & parametre représetant la carte tirer dans la fonction tirer\-\_\-carte \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonction_8c_ae877ba4631126fa76bf3fe736ad4988c}{\index{fonction.\-c@{fonction.\-c}!afficher\-\_\-mains@{afficher\-\_\-mains}}
+\index{afficher\-\_\-mains@{afficher\-\_\-mains}!fonction.c@{fonction.\-c}}
+\subsubsection[{afficher\-\_\-mains}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\-\_\-mains (
+\begin{DoxyParamCaption}
+\item[{short}]{joueur}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_ae877ba4631126fa76bf3fe736ad4988c}
+
+
+fonction permettant d'afficher la main du joueur entrée en paramètre 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & parametre représentant le joueur concerné \\
+\hline
+\end{DoxyParams}
+\hypertarget{fonction_8c_ad26bfbf4807c11b9409a0b8f0df030af}{\index{fonction.\-c@{fonction.\-c}!donner\-\_\-valeur\-\_\-carte@{donner\-\_\-valeur\-\_\-carte}}
+\index{donner\-\_\-valeur\-\_\-carte@{donner\-\_\-valeur\-\_\-carte}!fonction.c@{fonction.\-c}}
+\subsubsection[{donner\-\_\-valeur\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short donner\-\_\-valeur\-\_\-carte (
+\begin{DoxyParamCaption}
+\item[{short}]{joueur, }
+\item[{short}]{carte}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_ad26bfbf4807c11b9409a0b8f0df030af}
+
+
+donne la valeur de la carte de 0 à 12 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & parametre représentant le joueur concerné \\
+\hline
+{\em carte} & parametre représentant la carte tirée par le joueur placé en paramètre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+short indique la valeur de la carte attribuée au joueur 
+\end{DoxyReturn}
+\hypertarget{fonction_8c_af1b24ae11904b70fc5951f618ed4db94}{\index{fonction.\-c@{fonction.\-c}!evaluer\-\_\-score@{evaluer\-\_\-score}}
+\index{evaluer\-\_\-score@{evaluer\-\_\-score}!fonction.c@{fonction.\-c}}
+\subsubsection[{evaluer\-\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}short evaluer\-\_\-score (
+\begin{DoxyParamCaption}
+\item[{short}]{joueur, }
+\item[{short}]{carte\-\_\-recue, }
+\item[{short $\ast$}]{score}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_af1b24ae11904b70fc5951f618ed4db94}
+
+
+fonction permettant de mettre à jour le score du joueur placer en paramètre en fonction de la carte reçue 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & parametre représentant le joueur concerné \\
+\hline
+{\em carte} & parametre représentant la carte tirée par le joueur placé en paramètre \\
+\hline
+{\em score} & point du joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+short renvoie au point de la carte tirée par le joueur 
+\end{DoxyReturn}
+\hypertarget{fonction_8c_a6abf9e7f9fc14ad236cf90717f19a335}{\index{fonction.\-c@{fonction.\-c}!tirer\-\_\-carte@{tirer\-\_\-carte}}
+\index{tirer\-\_\-carte@{tirer\-\_\-carte}!fonction.c@{fonction.\-c}}
+\subsubsection[{tirer\-\_\-carte}]{\setlength{\rightskip}{0pt plus 5cm}short tirer\-\_\-carte (
+\begin{DoxyParamCaption}
+\item[{short}]{joueur}
+\end{DoxyParamCaption}
+)}}\label{fonction_8c_a6abf9e7f9fc14ad236cf90717f19a335}
+
+
+permet de tirer une carte parmis 52 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & celui qui tire la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+short renvoie à la carte tirée 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des variables}
+\hypertarget{fonction_8c_a4afa838396554698e0668c1a09161ebc}{\index{fonction.\-c@{fonction.\-c}!cartes@{cartes}}
+\index{cartes@{cartes}!fonction.c@{fonction.\-c}}
+\subsubsection[{cartes}]{\setlength{\rightskip}{0pt plus 5cm}short cartes\mbox{[}52\mbox{]}}}\label{fonction_8c_a4afa838396554698e0668c1a09161ebc}
+tableau contenant les 52 cartes du jeu \hypertarget{fonction_8c_a9e7bc0727efe41c6056e4308041f7b88}{\index{fonction.\-c@{fonction.\-c}!nb\-\_\-as\-\_\-banque@{nb\-\_\-as\-\_\-banque}}
+\index{nb\-\_\-as\-\_\-banque@{nb\-\_\-as\-\_\-banque}!fonction.c@{fonction.\-c}}
+\subsubsection[{nb\-\_\-as\-\_\-banque}]{\setlength{\rightskip}{0pt plus 5cm}short nb\-\_\-as\-\_\-banque}}\label{fonction_8c_a9e7bc0727efe41c6056e4308041f7b88}
+variable globale contenant le nombre d'as de la banque \hypertarget{fonction_8c_a0f90764a2168917eb0c360c066a47b02}{\index{fonction.\-c@{fonction.\-c}!nb\-\_\-as\-\_\-joueur@{nb\-\_\-as\-\_\-joueur}}
+\index{nb\-\_\-as\-\_\-joueur@{nb\-\_\-as\-\_\-joueur}!fonction.c@{fonction.\-c}}
+\subsubsection[{nb\-\_\-as\-\_\-joueur}]{\setlength{\rightskip}{0pt plus 5cm}short nb\-\_\-as\-\_\-joueur}}\label{fonction_8c_a0f90764a2168917eb0c360c066a47b02}
+variable globale contenant le nombre d'as du joueur 

@@ -13,23 +13,23 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define LIBRE			0
-#define BANQUE			1
-#define JOUEUR			2
-#define BANQUE_CACHEE	3
+#define LIBRE			0	/**< constante indiquant que la carte est libre */
+#define BANQUE			1	/**< constante indiquant que la carte est dans la main de la banque */
+#define JOUEUR			2	/**< constante indiquant que la carte est dans la main du joueur */
+#define BANQUE_CACHEE	3	/**< constante indiquant que la carte est dans la main de la banque mais cachée*/
 
-#define DEB_COEURS		0
-#define	FIN_COEURS		12
-#define	DEB_CARREAUX	13
-#define FIN_CARREAUX	25
-#define	DEB_PIQUES		26
-#define FIN_PIQUES		38
-#define	DEB_TREFLES		39
-#define	FIN_TREFLES		51
+#define DEB_COEURS		0	/**< constante indiquant le début des cartes de type coeurs */
+#define	FIN_COEURS		12	/**< constante indiquant la fin des cartes de type coeurs */
+#define	DEB_CARREAUX	13	/**< constante indiquant le début des cartes de type carreaux */
+#define FIN_CARREAUX	25	/**< constante indiquant le fin des cartes de type carreaux */
+#define	DEB_PIQUES		26	/**< constante indiquant le début des cartes de type piques */
+#define FIN_PIQUES		38	/**< constante indiquant le fin des cartes de type piques */
+#define	DEB_TREFLES		39	/**< constante indiquant le début des cartes de type trefles */
+#define	FIN_TREFLES		51	/**< constante indiquant le fin des cartes de type trefles */
 
-short cartes[52];
-short nb_as_joueur;
-short nb_as_banque;
+short cartes[52];	/**< tableau contenant les 52 cartes du jeu */
+short nb_as_joueur;	/**< variable globale contenant le nombre d'as du joueur */
+short nb_as_banque;	/**< variable globale contenant le nombre d'as de la banque */
 
 
 /**
