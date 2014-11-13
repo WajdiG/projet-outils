@@ -38,7 +38,7 @@ short nb_as_banque; 		/**< variable globale contenant le nombre d'as de la banqu
 */
 int main(){
 	int cpt=0;
-	int choix;
+	int choix=0;
 	short carte=0;
 	short score_joueur=0;
 	short score_banque=0;
