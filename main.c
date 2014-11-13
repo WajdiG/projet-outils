@@ -78,11 +78,17 @@ int main(){
 			donner_valeur_carte(JOUEUR, carte);
 			score_joueur=evaluer_score(JOUEUR, carte, &score_joueur);
 		}
-		while(score_banque<17||(choix==0 && score_banque>score_joueur)){
+		
+		if(choix==0&&score_banque>17){
+			break;
+		}
+		
+		if(score_banque<17||score_banque<score_joueur&&score_joueur<=21){
 			carte=tirer_carte(BANQUE);
 			donner_valeur_carte(BANQUE, carte);
-			score_banque=evaluer_score(BANQUE, carte, &score_banque);
+			score_banque=evaluer_score(BANQUE, carte, &score_banque);	
 		}
+		
 		
 		printf("joueur : \n");
 		afficher_mains(JOUEUR);
@@ -93,24 +99,25 @@ int main(){
 		printf("score banque : %d \n", score_banque);
 	}
 
-	if(score_banque<score_joueur&&score_banque<21&&score_joueur<21){
+	if(score_banque<score_joueur&&score_joueur<21||score_banque>21&&score_joueur<=21||score_banque!=21&&score_joueur==21){
 		printf("\nle joueur 1 a gagné !\n");
 		afficher_mains(JOUEUR);
 	}
-	else if(score_banque>score_joueur&&score_banque<21&&score_joueur<21){
+	else if(score_banque>score_joueur&&score_banque<21||score_banque<=21&&score_joueur>21||score_joueur!=21&&score_banque==21){
 		printf("\nl'ordinateur a gagné !\n");
 		afficher_mains(BANQUE);
 	}
-	else if(score_banque>21&&score_joueur<=21){
-		printf("\nle joueur 1 a gagné !\n");
+	else if(score_joueur==score_banque||(score_banque>21&&score_joueur>21)){
+		printf("\nMatch nul !\n");
+		printf("joueur : \n");
 		afficher_mains(JOUEUR);
-	}
-	else if(score_joueur>21&&score_banque<=21){
-		printf("\nl'ordinateur a gagné !\n");
-		afficher_mains(BANQUE);
-	}
+		printf("score joueur : %d \n", score_joueur);
 		
-	
+		printf("banque : \n");
+		afficher_mains(BANQUE);
+		printf("score banque : %d \n", score_banque);
+	}
 
+		
 	return EXIT_SUCCESS;
 }
