@@ -118,7 +118,7 @@ void afficher_mains_cachee(){
 	int cpt=0;
 
 	for(cpt=0 ; cpt<52 ; cpt++){
-		if(cartes[cpt]==BANQUE||cartes[cpt]==BANQUE_CACHEE){
+		if(cartes[cpt]==BANQUE_CACHEE){
 				afficher_carte(cpt);
 		}
 	}
