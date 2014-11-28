@@ -1,0 +1,8 @@
+test : Test.o fonction.o
+	gcc Test.o fonction.o -o test
+	
+fonction.o : fonction.c
+	gcc -c fonction.c
+	
+Test.o : Test.c
+	gcc -c Test.c

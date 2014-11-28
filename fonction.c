@@ -46,6 +46,7 @@ short tirer_carte(short joueur){
 	while(cartes[carte] != 0||(carte%13)==1){
 		carte = rand()%(52-1)+1;
 	}
+	
 	cartes[carte]=joueur;
 	return carte;
 }

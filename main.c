@@ -75,7 +75,7 @@ int main(){
 	while(score_joueur<21&&score_cachee<21){
 	
 //PIOCHE DES CARTES 
-//JOUEUR	
+	//JOUEUR	
 		printf("souhaitez vous tirer une carte ? (1=oui ; 0=non)");
 		scanf("%i", &choix);
 		while(choix<0||choix>1){
@@ -95,7 +95,7 @@ int main(){
 			break;
 		}
 		
-//ORDINATEUR	
+	//ORDINATEUR	
 		if((score_cachee<17)||(score_cachee<score_joueur&&score_joueur<=21)){
 			carte=tirer_carte(BANQUE);
 			donner_valeur_carte(BANQUE, carte);
